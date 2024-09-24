@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title">Hair Salon Survey</h1>
+
+    <p id="description">Thank you for choosing Hair Waves Salon! We'd appreciate if you could give us a moment of your time to give us your opinion on your visit.</p>
+
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label" name="name">Name <input id="name" type="text" placeholder="Name" required></label>
+
+      <label id="email-label" name="email" >Email <input id="email" type="email" placeholder="name@email.com" required></label>
+
+      <label id="number-label" name="age">Age <input id="number" type="number" min="13" max="120" placeholder="Age"></label>
+
+<label for="dropdown">When did you last visit us?
+        <select id="dropdown">
+          <option>Today</option>
+          <option>This week</option>
+          <option>This month</option>
+          <option>This year</option>
+      </select></label>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Which service did you receive at your visit? Check one</legend>
+      <label for="radio-one"><input id="radio-one" type="radio" name="service" value="ladies-cut" class="inline" checked />Ladies' Cut</label>
+      <label for="radio-two"><input id="radio-two" type="radio" name="service" value="mens-cut" class="inline" />Mens' Cut</label>
+      <label for="radio-three"><input id="radio-three" type="radio" name="service" value="cut-wash-blowdry" class="inline" />Cut, Wash & Blowdry</label>
+      <label for="radio-four"><input id="radio-four" type="radio" name="service" value="restyle-wash-blowdry" class="inline" />Restyle, Wash & Blowdry</label>
+      <label for="radio-five"><input id="radio-five" type="radio" name="service" value="foils" class="inline" />Foils</label>
+      <label for="radio-six"><input id="radio-six" type="radio" name="service" value="toners" class="inline" />Toners</label>
+      <label for="radio-seven"><input id="radio-seven" type="radio" name="service"  value="colouring" class="inline" />Colouring</label>
+      <label for="radio-eight"><input id="radio-eight" type="radio" name="service" value="toners" class="inline" />Treatments</label>
+      <label for="radio-four"><input id="radio-four" type="radio" name="service" value="session styling" class="inline" />Session Styling</label>
+
+<legend>What did you enjoy about your service? Check all that apply</legend>
+  <label for="enjoy-check-one"> <input id="enjoy-check-one" name="enjoy" value="service-quality" class="inline" type="checkbox">Quality of cut/colour/styling</label>
+  <label for="enjoy-check-two"><input id="enjoy-check-two" name="enjoy" value="product-quality" class="inline" type="checkbox">Quality of products</label>
+  <label for="enjoy-check-three"><input id="enjoy-check-three" name="enjoy" value="cleanliness" class="inline" type="checkbox">Cleanliness of salon</label>
+  <label for="enjoy-check-four"><input id="enjoy-check-four" name="enjoy" value="waiting-time" class="inline" type="checkbox">Waiting time</label>
+  <label for="enjoy-check-five"><input id="enjoy-check-two" name="enjoy" value="manner" class="inline" type="checkbox">Manner of stylists</label>
+  
+<legend>What could be improved? Check all that apply</legend>
+  <label for="improve-check-one"> <input id="improve-check-one" name="improvement" value="service-quality" class="inline" type="checkbox">Quality of cut/colour/styling</label>
+  <label for="improve-check-two"><input id="improve-check-two" name="improvement" value="product-quality" class="inline" type="checkbox">Quality of products</label>
+  <label for="improve-check-three"><input id="improve-check-three" name="improvement" value="cleanliness" class="inline" type="checkbox">Cleanliness of salon</label>
+  <label for="improve-check-four"><input id="improve-check-four" name="improvement" value="waiting-time" class="inline" type="checkbox">Waiting time</label>
+  <label for="improve-check-five"><input id="improve-check-five" name="improvement" value="manner" class="inline" type="checkbox">Manner of stylists</label>      
+
+<legend>Comments and/or other recommendations:</legend>
+<label for="textbox">
+  <textarea id="textbox" name="comments" rows="3" cols="30" placeholder="Type here"></textarea>
+  </label>
+
+  <input type="submit" id="submit" />
+  </fieldset>
+
+      </form>
+
+  </div>
+</body>
+
+</html>
